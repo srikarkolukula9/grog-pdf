@@ -71,7 +71,7 @@ const HomePage: FunctionComponent = () => {
           <img
             className="relative w-[305px] h-[122px] overflow-hidden shrink-0"
             alt=""
-            src="/logo-svg.svg"
+            src="/build/logo-svg.svg"
           />
         </div>
         <div className="flex flex-row items-center justify-center gap-[39px]">
