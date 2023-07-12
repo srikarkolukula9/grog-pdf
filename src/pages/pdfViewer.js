@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Document, Page, pdfjs } from 'react-pdf';
+import SamplePdf from '../../src/images/sample.pdf'
 
 
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
@@ -33,7 +34,7 @@ function pdfViewer() {
     <>
   
       <Document
-        file="../../sample.pdf"
+        file={SamplePdf}
         onLoadSuccess={onDocumentLoadSuccess}
       >
         <Page pageNumber={pageNumber} />

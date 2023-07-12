@@ -2,6 +2,11 @@ import { FunctionComponent, useState } from "react";
 import { FileUploader } from "react-drag-drop-files";
 import { useNavigate } from "react-router-dom";
 import PreviewPage from "./PreviewPage";
+import LogoSvg from "../../src/images/logo-svg.svg";
+import UploadSymbol from "../../src/images/group-3.svg";
+import UploadedCSS from "../../src/images/Frame 10css_uploaded.svg";
+import UploadedHTML from "../../src/images/Frame 10.svg";
+
 const fileTypeHtml = ["HTML"];
 const fileTypeCss = ["CSS"];
 
@@ -71,7 +76,7 @@ const HomePage: FunctionComponent = () => {
           <img
             className="relative w-[305px] h-[122px] overflow-hidden shrink-0"
             alt=""
-            src="/build/logo-svg.svg"
+            src={LogoSvg}
           />
         </div>
         <div className="flex flex-row items-center justify-center gap-[39px]">
@@ -120,7 +125,7 @@ const HomePage: FunctionComponent = () => {
                   <img
                     className="absolute h-[58.37%] w-[38.48%] top-[-2.92%] right-[30.42%] bottom-[44.55%] left-[31.1%] max-w-full overflow-hidden max-h-full opacity-[0.6]"
                     alt=""
-                    src="/group-3.svg"
+                    src={UploadSymbol}
                   />
                 </div>
                 <div className="rounded-[9px] bg-maroon overflow-hidden flex flex-row py-[10px] px-[10px] items-center justify-center text-sm text-white">
@@ -132,7 +137,7 @@ const HomePage: FunctionComponent = () => {
                     {fileHTML
                       ? `File name: ${fileHTML.name}`
                       : "File not uploaded yet"}
-                    {fileHTML ? <img src="/Frame 10.svg" /> : ""}
+                    {fileHTML ? <img src={UploadedHTML} /> : ""}
                   </div>
                 </div>
               </div>
@@ -154,7 +159,7 @@ const HomePage: FunctionComponent = () => {
                   <img
                     className="absolute h-[58.37%] w-[38.48%] top-[-2.92%] right-[30.42%] bottom-[44.55%] left-[31.1%] max-w-full overflow-hidden max-h-full opacity-[0.6]"
                     alt=""
-                    src="/group-3.svg"
+                    src={UploadSymbol}
                   />
                 </div>
                 <div className="rounded-[9px] bg-maroon overflow-hidden flex flex-row py-[10px] px-[10px] items-center justify-center text-sm text-white">
@@ -166,7 +171,7 @@ const HomePage: FunctionComponent = () => {
                     {fileCSS
                       ? `File name: ${fileCSS.name}`
                       : "File not uploaded yet"}
-                    {fileCSS ? <img src="/Frame 10css_uploaded.svg" /> : ""}
+                    {fileCSS ? <img src={UploadedCSS} /> : ""}
                   </div>
                 </div>
               </div>

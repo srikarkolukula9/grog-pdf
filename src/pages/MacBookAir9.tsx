@@ -1,4 +1,9 @@
 import { FunctionComponent } from "react";
+import LogoSvg from "../../src/images/logo-svg.svg";
+import LinkBlue from "../images/Group 6blue.svg";
+import { Link } from "react-router-dom";
+import Group6 from "../../src/images/group-6.svg";
+import Trash from "../../src/images/Group 6_trash.svg";
 
 const MacBookAir9: FunctionComponent = () => {
   return (
@@ -7,7 +12,7 @@ const MacBookAir9: FunctionComponent = () => {
         <img
           className="relative w-[172.27px] h-[68.91px] overflow-hidden shrink-0"
           alt=""
-          src="/logo-svg.svg"
+          src={LogoSvg}
         />
       </div>
       <div className="flex flex-row items-center justify-center gap-[35px]">
@@ -42,7 +47,7 @@ const MacBookAir9: FunctionComponent = () => {
               <img
                 className="relative w-[21.89px] h-[21.87px]"
                 alt=""
-                src="/group-6.svg"
+                src={Group6}
               />
               <div className="relative font-medium">Untitled.CSV</div>
             </div>
@@ -50,7 +55,7 @@ const MacBookAir9: FunctionComponent = () => {
               <img
                 className="relative w-[23.58px] h-[23.58px]"
                 alt=""
-                src="/Group 6_trash.svg"
+                src={Trash}
               />
             </div>
           </div>
@@ -71,7 +76,7 @@ const MacBookAir9: FunctionComponent = () => {
                     <img
                       className="relative w-[16.57px] h-[16.56px]"
                       alt=""
-                      src="/Group 6blue.svg"
+                      src={LinkBlue}
                     />
                     <div className="relative font-medium">Link with text</div>
                   </div>
@@ -80,7 +85,7 @@ const MacBookAir9: FunctionComponent = () => {
                   <img
                     className="relative w-[23.58px] h-[23.58px] overflow-hidden shrink-0"
                     alt=""
-                    src="/Group 6_trash.svg"
+                    src={Trash}
                   />
                 </div>
               </div>
@@ -91,7 +96,7 @@ const MacBookAir9: FunctionComponent = () => {
                     <img
                       className="relative w-[16.57px] h-[16.56px]"
                       alt=""
-                      src="/Group 6blue.svg"
+                      src={LinkBlue}
                     />
                     <div className="relative font-medium">Linked</div>
                   </div>
@@ -101,7 +106,7 @@ const MacBookAir9: FunctionComponent = () => {
                   <img
                     className="relative w-[23.58px] h-[23.58px] overflow-hidden shrink-0"
                     alt=""
-                    src="/Group 6_trash.svg"
+                    src={Trash}
                   />
                 </div>
               </div>
@@ -112,7 +117,7 @@ const MacBookAir9: FunctionComponent = () => {
                     <img
                       className="relative w-[16.57px] h-[16.56px]"
                       alt=""
-                      src="/Group 6blue.svg"
+                      src={LinkBlue}
                     />
                     <div className="relative font-medium">Link with text</div>
                   </div>
@@ -121,7 +126,7 @@ const MacBookAir9: FunctionComponent = () => {
                   <img
                     className="relative w-[23.58px] h-[23.58px] overflow-hidden shrink-0"
                     alt=""
-                    src="/Group 6_trash.svg"
+                    src={Trash}
                   />
                 </div>
               </div>
@@ -132,7 +137,7 @@ const MacBookAir9: FunctionComponent = () => {
                     <img
                       className="relative w-[16.57px] h-[16.56px]"
                       alt=""
-                      src="/Group 6blue.svg"
+                      src={LinkBlue}
                     />
                     <div className="relative font-medium">Link with text</div>
                   </div>
@@ -141,7 +146,7 @@ const MacBookAir9: FunctionComponent = () => {
                   <img
                     className="relative w-[23.58px] h-[23.58px] overflow-hidden shrink-0"
                     alt=""
-                    src="/Group 6_trash.svg"
+                    src={Trash}
                   />
                 </div>
               </div>
@@ -152,7 +157,7 @@ const MacBookAir9: FunctionComponent = () => {
                     <img
                       className="relative w-[16.57px] h-[16.56px]"
                       alt=""
-                      src="/Group 6blue.svg"
+                      src={LinkBlue}
                     />
                     <div className="relative font-medium">Link with text</div>
                   </div>
@@ -161,7 +166,7 @@ const MacBookAir9: FunctionComponent = () => {
                   <img
                     className="relative w-[23.58px] h-[23.58px] overflow-hidden shrink-0"
                     alt=""
-                    src="/trash.svg"
+                    src={Trash}
                   />
                 </div>
               </div>

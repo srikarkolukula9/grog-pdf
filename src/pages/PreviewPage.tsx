@@ -2,6 +2,8 @@ import { FunctionComponent, useEffect, useState } from "react";
 import pdfViewer from "./pdfViewer";
 import { Modal } from "@restart/ui";
 import { FileUploader } from "react-drag-drop-files";
+import LogoSvg from "../../src/images/logo-svg.svg";
+import Group6 from "../../src//images/group-6.svg";
 import { useNavigate } from "react-router-dom";
 import MacBookAir9 from "./MacBookAir9";
 
@@ -17,9 +19,9 @@ const PreviewPage: FunctionComponent = () => {
   // };
 
   const handleClick = () => {
-    if (file) {
-      navigate("/CSV");
-    }
+    // if (file) {
+    //   navigate("/CSV");
+    // }
     setShow(true);
   };
 
@@ -28,6 +30,7 @@ const PreviewPage: FunctionComponent = () => {
   const handleChange = (file: any) => {
     setShow(false);
     setFile(file);
+    navigate("/CSV");
   };
 
   return (
@@ -37,7 +40,7 @@ const PreviewPage: FunctionComponent = () => {
           <img
             className="relative w-[172.27px] h-[68.91px] overflow-hidden shrink-0"
             alt=""
-            src="/logo-svg.svg"
+            src={LogoSvg}
           />
         </div>
         <div className="rounded-[25px] bg-lavenderblush box-border h-[900px] overflow-hidden flex flex-col py-7 px-[343px] items-center justify-start border-[1px] border-solid border-mistyrose-200">
@@ -67,7 +70,7 @@ const PreviewPage: FunctionComponent = () => {
                       <img
                         className="relative w-[20px] h-[20px]"
                         alt=""
-                        src="/group-6.svg"
+                        src={Group6}
                       />
                       <div className="relative font-medium">
                         Connect HTML with CSV data
