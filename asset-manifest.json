@@ -1,16 +1,24 @@
 {
   "files": {
     "main.css": "/grog-pdf/static/css/main.89597807.css",
-    "main.js": "/grog-pdf/static/js/main.f209395d.js",
+    "main.js": "/grog-pdf/static/js/main.eff98697.js",
     "static/js/787.ce34f802.chunk.js": "/grog-pdf/static/js/787.ce34f802.chunk.js",
     "static/media/pdf.worker.min.js": "/grog-pdf/static/media/pdf.worker.min.980f5ec46031e7a71ef8.js",
+    "static/media/sample.pdf": "/grog-pdf/static/media/sample.3153a9414232c6c6d912.pdf",
+    "static/media/logo-svg.svg": "/grog-pdf/static/media/logo-svg.4dfc5c9784fcb991fba581cde7088bec.svg",
+    "static/media/Frame 10css_uploaded.svg": "/grog-pdf/static/media/Frame 10css_uploaded.cafceaa1def0635ad7f08ceaef7616e7.svg",
+    "static/media/Frame 10.svg": "/grog-pdf/static/media/Frame 10.fda1856de507bb63386d397dd91ae857.svg",
+    "static/media/group-6.svg": "/grog-pdf/static/media/group-6.b699b2b8e7c25e75a22d34328ef07078.svg",
+    "static/media/Group 6blue.svg": "/grog-pdf/static/media/Group 6blue.16b30dca2002bd8423e7362ae7ab27af.svg",
+    "static/media/Group 6_trash.svg": "/grog-pdf/static/media/Group 6_trash.397aca91be7e50c7b6897e50a364ee1e.svg",
+    "static/media/group-3.svg": "/grog-pdf/static/media/group-3.a2145f798a87b69229fe9e61c1fc29bb.svg",
     "index.html": "/grog-pdf/index.html",
     "main.89597807.css.map": "/grog-pdf/static/css/main.89597807.css.map",
-    "main.f209395d.js.map": "/grog-pdf/static/js/main.f209395d.js.map",
+    "main.eff98697.js.map": "/grog-pdf/static/js/main.eff98697.js.map",
     "787.ce34f802.chunk.js.map": "/grog-pdf/static/js/787.ce34f802.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.89597807.css",
-    "static/js/main.f209395d.js"
+    "static/js/main.eff98697.js"
   ]
 }
