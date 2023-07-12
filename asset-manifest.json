@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.89597807.css",
-    "main.js": "/static/js/main.87db4820.js",
-    "static/js/787.ce34f802.chunk.js": "/static/js/787.ce34f802.chunk.js",
-    "static/media/pdf.worker.min.js": "/static/media/pdf.worker.min.980f5ec46031e7a71ef8.js",
-    "index.html": "/index.html",
-    "main.89597807.css.map": "/static/css/main.89597807.css.map",
-    "main.87db4820.js.map": "/static/js/main.87db4820.js.map",
-    "787.ce34f802.chunk.js.map": "/static/js/787.ce34f802.chunk.js.map"
+    "main.css": "/grog-pdf/static/css/main.89597807.css",
+    "main.js": "/grog-pdf/static/js/main.dbf31d6f.js",
+    "static/js/787.ce34f802.chunk.js": "/grog-pdf/static/js/787.ce34f802.chunk.js",
+    "static/media/pdf.worker.min.js": "/grog-pdf/static/media/pdf.worker.min.980f5ec46031e7a71ef8.js",
+    "index.html": "/grog-pdf/index.html",
+    "main.89597807.css.map": "/grog-pdf/static/css/main.89597807.css.map",
+    "main.dbf31d6f.js.map": "/grog-pdf/static/js/main.dbf31d6f.js.map",
+    "787.ce34f802.chunk.js.map": "/grog-pdf/static/js/787.ce34f802.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.89597807.css",
-    "static/js/main.87db4820.js"
+    "static/js/main.dbf31d6f.js"
   ]
 }
