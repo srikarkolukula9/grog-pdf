@@ -49,7 +49,7 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<HomePage />} />
+      <Route path="/grog-pdf" element={<HomePage />} />
       <Route path="/Preview" element={<PreviewPage />} />
       <Route path="/CSV" element={<MacBookAir9 />} />
     </Routes>
