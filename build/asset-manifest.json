@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/grog-pdf/static/css/main.89597807.css",
+    "main.js": "/grog-pdf/static/js/main.063da5da.js",
+    "static/js/787.ce34f802.chunk.js": "/grog-pdf/static/js/787.ce34f802.chunk.js",
+    "static/media/pdf.worker.min.js": "/grog-pdf/static/media/pdf.worker.min.980f5ec46031e7a71ef8.js",
+    "index.html": "/grog-pdf/index.html",
+    "main.89597807.css.map": "/grog-pdf/static/css/main.89597807.css.map",
+    "main.063da5da.js.map": "/grog-pdf/static/js/main.063da5da.js.map",
+    "787.ce34f802.chunk.js.map": "/grog-pdf/static/js/787.ce34f802.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.89597807.css",
+    "static/js/main.063da5da.js"
+  ]
+}
