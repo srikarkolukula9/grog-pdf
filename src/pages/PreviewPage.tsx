@@ -46,7 +46,12 @@ const PreviewPage: FunctionComponent = () => {
         <div className="rounded-[25px] bg-lavenderblush box-border h-[900px] overflow-hidden flex flex-col py-7 px-[343px] items-center justify-start border-[1px] border-solid border-mistyrose-200">
           <div className="rounded-[41px] bg-lightpink overflow-hidden flex flex-col py-[7px] px-[15px] items-center justify-center">
             <div className="relative leading-[20px] font-medium">{`HTML & CSS Preview`}</div>
-            <div className="overflow-hidden flex">{pdfViewer()}</div>
+            {/* <div className="overflow-hidden flex">{pdfViewer()}</div> */}
+            <iframe
+              src="http://127.0.0.1:8000/api/preview/index.html/"
+              width={"800px"}
+              height={"1400px"}
+            ></iframe>
           </div>
         </div>
         <div className="overflow-hidden flex flex-col items-center justify-center gap-[16px] text-sm ">
