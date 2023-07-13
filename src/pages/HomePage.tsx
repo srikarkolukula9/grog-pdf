@@ -6,6 +6,7 @@ import LogoSvg from "../../src/images/logo-svg.svg";
 import UploadSymbol from "../../src/images/group-3.svg";
 import UploadedCSS from "../../src/images/Frame 10css_uploaded.svg";
 import UploadedHTML from "../../src/images/Frame 10.svg";
+import axios from "axios";
 
 const fileTypeHtml = ["HTML"];
 const fileTypeCss = ["CSS"];
@@ -22,24 +23,40 @@ const HomePage: FunctionComponent = () => {
   // let fileCss = null;
   // const [fileCss, setFileCss] = useState<any>(null);
   // const [extension, setExtension] = useState<string>(""); //added
-  const [countHTML, setCountHTML] = useState<number>(0); //added
-  const [countCSS, setCountCSS] = useState<number>(0);
+  // const [countHTML, setCountHTML] = useState<number>(0);
+  // const [countCSS, setCountCSS] = useState<number>(0);
   // const handleChange = (file: any) => {
   //   setFile(file);
 
   //   setCount(count + 1); //added
   // };
+
+  const handleUpload = (fileHTML: any, fileCSS: any) => {
+    let formdata = new FormData();
+
+    formdata.append("html_file", fileHTML);
+    formdata.append("css_file", fileCSS);
+    axios({
+      url: "http://127.0.0.1:8000/api/upload/",
+      method: "POST",
+      data: formdata,
+    }).then((res) => {
+      console.log(res);
+    });
+  };
   const handleChangeHTML = (fileHTML: any) => {
     setFileHTML(fileHTML);
-
-    setCountHTML(countHTML + 1); //added
+    console.log(fileHTML);
   };
   const handleChangeCSS = (fileCSS: any) => {
     setFileCSS(fileCSS);
+    console.log(fileCSS);
 
-    setCountCSS(countCSS + 1); //added
+    // setCountCSS(countCSS + 1); //added
   };
-
+  if (fileCSS && fileHTML) {
+    handleUpload(fileHTML, fileCSS);
+  }
   // const clickNavigate = () => {
   //   return (
   //     <Routes>

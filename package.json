@@ -12,6 +12,7 @@
         "@types/node": "^16.11.14",
         "@types/react": "^18.0.28",
         "@types/react-dom": "^18.0.11",
+        "axios": "^1.4.0",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "react-drag-drop-files": "^2.3.10",
@@ -30,12 +31,11 @@
     },
     "scripts": {
         "start": "react-scripts start",
-        "predeploy" : "npm run build",
-        "deploy" : "gh-pages -d build",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build",
         "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject"
-        
     },
     "eslintConfig": {
         "root": true
@@ -52,7 +52,4 @@
             "last 1 safari version"
         ]
     }
-    
-
 }
-
