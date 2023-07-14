@@ -1,6 +1,6 @@
 import { FunctionComponent, useState } from "react";
 import { FileUploader } from "react-drag-drop-files";
-import { useNavigate } from "react-router-dom";
+import { Route, Routes, useNavigate } from "react-router-dom";
 import PreviewPage from "./PreviewPage";
 import LogoSvg from "../../src/images/logo-svg.svg";
 import UploadSymbol from "../../src/images/group-3.svg";
@@ -19,6 +19,9 @@ const HomePage: FunctionComponent = () => {
   };
   const [fileHTML, setFileHTML] = useState<any>(null);
   const [fileCSS, setFileCSS] = useState<any>(null);
+  const [file_html, setFile_html] = useState<any>(null);
+  const [file_css, setFile_css] = useState<any>(null);
+
   // let fileHtml = null;
   // let fileCss = null;
   // const [fileCss, setFileCss] = useState<any>(null);
@@ -31,31 +34,38 @@ const HomePage: FunctionComponent = () => {
   //   setCount(count + 1); //added
   // };
 
-  const handleUpload = (fileHTML: any, fileCSS: any) => {
+  const handleUpload = (file_html: any, file_css: any) => {
     let formdata = new FormData();
 
-    formdata.append("html_file", fileHTML);
-    formdata.append("css_file", fileCSS);
+    formdata.append("html_file", file_html);
+    formdata.append("css_file", file_css);
     axios({
       url: "http://127.0.0.1:8000/api/upload/",
       method: "POST",
       data: formdata,
     }).then((res) => {
       console.log(res);
+      navigate("/Preview");
     });
   };
   const handleChangeHTML = (fileHTML: any) => {
     setFileHTML(fileHTML);
     console.log(fileHTML);
+    const file_html = new File([fileHTML], "index.html");
+    setFile_html(file_html);
+    console.log(file_html);
   };
   const handleChangeCSS = (fileCSS: any) => {
     setFileCSS(fileCSS);
     console.log(fileCSS);
+    const file_css = new File([fileCSS], "style.css");
+    setFile_css(file_css);
+    console.log(file_css);
 
     // setCountCSS(countCSS + 1); //added
   };
-  if (fileCSS && fileHTML) {
-    handleUpload(fileHTML, fileCSS);
+  if (file_css && file_html) {
+    handleUpload(file_html, file_css);
   }
   // const clickNavigate = () => {
   //   return (
@@ -82,7 +92,7 @@ const HomePage: FunctionComponent = () => {
   // if (fileHTML && fileCSS) {
   //   return (
   //     <Routes>
-  //       <Route path="/" element={<PreviewPage />} />
+  //       <Route path="/Preview" element={<PreviewPage />} />
   //     </Routes>
   //   );
   // }
