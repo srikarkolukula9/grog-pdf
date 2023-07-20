@@ -6,6 +6,9 @@ import LogoSvg from "../../src/images/logo-svg.svg";
 import Group6 from "../../src//images/group-6.svg";
 import { useNavigate } from "react-router-dom";
 import MacBookAir9 from "./MacBookAir9";
+import axios from "axios";
+import { fetchColumnNames } from "./fetchColumnName";
+// import { fetchColumnNames } from "./fetchColumnName";
 
 const PreviewPage: FunctionComponent = () => {
   const [show, setShow] = useState(false);
@@ -30,7 +33,19 @@ const PreviewPage: FunctionComponent = () => {
   const handleChange = (file: any) => {
     setShow(false);
     setFile(file);
-    navigate("/CSV");
+
+    let formdata = new FormData();
+
+    formdata.append("csv_file", file);
+    axios({
+      url: "http://127.0.0.1:8000/api/upload-csv/",
+      method: "POST",
+      data: formdata,
+    }).then((res) => {
+      console.log(res);
+      // fetchColumnNames();
+      navigate("/CSV");
+    });
   };
 
   return (
